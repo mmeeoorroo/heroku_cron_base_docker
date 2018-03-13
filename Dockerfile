@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
     apt-get install -y cron curl openssh-client ruby git
 
-RUN curl https://toolbelt.heroku.com/install.sh | sh
+RUN curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 ENV PATH $PATH:/usr/local/heroku/bin
 RUN heroku --version
 
